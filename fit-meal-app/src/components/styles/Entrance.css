@@ -1,0 +1,107 @@
+/* Navbar Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Entrancenavbar {
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center all navbar content */
+  align-items: center;
+  background-color: #2d572c;
+  color: #fff;
+  padding: 25px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+  margin-right: 40px;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  width: 100%;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Home Section Styles */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  flex-grow: 1;
+  margin-top: 80px; /* Add top margin to prevent overlap with fixed navbar */
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #2d572c;
+  margin-bottom: 20px;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #2d572c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #256b2e;
+  transform: scale(1.05);
+}
+
+.cta-button:active {
+  background-color: #1d4b23;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
+
+  .home-container h1 {
+    font-size: 2rem;
+  }
+
+  .home-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px 10px;
+  }
+
+  /* Add overflow: hidden; for smaller screens */
+  body {
+    overflow: hidden; 
+  }
+}
